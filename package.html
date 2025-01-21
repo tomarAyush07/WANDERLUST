@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Package</title>
+  <link rel="icon" type="image/x-icon" href="logo1.jpg">
+  <link rel="stylesheet" href="css/package.css">
+  <link rel="stylesheet" href="css/package2.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <input type="checkbox" name="" id="">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a href="home2.html">About</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <h1 class="logo"><img src="logo1.jpg" class="logoimage" alt="Logo"></h1>
+    </div>
+  </nav>
+
+  <section id="packages">
+    <div class="scroll-container">
+      <div class="image-wrapper" id="destination">
+        <img src="destinationimages/dal.jpg" alt="Dal Lake">
+        <div class="image-details">
+          <h3>Dal Lake, Kashmir</h3>
+          <p class="package-price"><span class="detail-label">Price:</span> ₹2,000</p>
+          <p class="package-duration"><span class="detail-label">Duration:</span> 5 days, 4 nights</p>
+          <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> Summer (April to June)</p>
+          <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+          <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Complimentary breakfast and dinner</p>
+          <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Return flight, transportation, and accommodation</p>
+          <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free Shikara Ride on the Dal Lake</p>
+          <div class="button">
+          <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+          <button class="modify-button" onclick="showModifyPackageForm('Dal Lake, Kashmir')">Modify Package</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-wrapper">
+        <img src="destinationimages/hawamahal.jpg" alt="Hawa Mahal">
+        <div class="image-details">
+          <h3>Hawa Mahal, Jaipur</h3>
+          <p class="package-price"><span class="detail-label">Price:</span> ₹3,000</p>
+          <p class="package-duration"><span class="detail-label">Duration:</span> 3 days, 2 nights</p>
+          <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> Winter (October to March)</p>
+          <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+          <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and lunch included</p>
+          <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train tickets, city tour, and meals</p>
+          <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free entry to Amber Fort</p>
+          <div class="button">
+            <button class="confirm-button"  onclick="summarizeChanges()">Confirm Package</button>
+          <button class="modify-button" onclick="showModifyPackageForm('Hawa Mahal, Jaipur')">Modify Package</button>
+          </div>
+        </div>
+      </div>
+
+    <div class="image-wrapper">
+      <img src="destinationimages/jaisalmer.jpg" alt="Jaisalmer">
+      <div class="image-details">
+        <h3>Jaisalmer, Rajasthan</h3>
+        <p class="package-price"><span class="detail-label">Price:</span> ₹4,500</p>
+        <p class="package-duration"><span class="detail-label">Duration:</span> 4 days, 3 nights</p>
+        <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> Winter (October to March)</p>
+        <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+        <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and dinner included</p>
+        <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train tickets, camel safari, and accommodation</p>
+        <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free Desert Safari</p>
+        <div class="button">
+          <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+          <button class="modify-button" onclick="showModifyPackageForm('Jaisalmer, Rajasthan')">Modify Package</button>
+        </div>
+      </div>
+    </div>
+  
+   
+    <div class="image-wrapper">
+      <img src="destinationimages/kerala.jpg" alt="Kerala">
+      <div class="image-details">
+        <h3>Kerala</h3>
+        <p class="package-price"><span class="detail-label">Price:</span> ₹3,000</p>
+        <p class="package-duration"><span class="detail-label">Duration:</span> 6 days, 5 nights</p>
+        <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> Monsoon (June to September)</p>
+        <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+        <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and dinner included</p>
+        <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Houseboat ride, flights, and accommodation</p>
+        <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free Ayurvedic massage</p>
+        <div class="button">
+          <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+          <button class="modify-button" onclick="showModifyPackageForm('Kerala')">Modify Package</button>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="image-wrapper">
+      <img src="destinationimages/khajuraho.webp" alt="Khajuraho">
+      <div class="image-details">
+        <h3>Khajuraho, Madhya Pradesh</h3>
+        <p class="package-price"><span class="detail-label">Price:</span> ₹2,500</p>
+        <p class="package-duration"><span class="detail-label">Duration:</span> 3 days, 2 nights</p>
+        <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> Winter (October to March)</p>
+        <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+        <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast included</p>
+        <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train tickets and hotel stay</p>
+        <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free guided tour of the temples</p>
+        <div class="button">
+          <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+          <button class="modify-button" onclick="showModifyPackageForm('Khajuraho, Madhya Pradesh')">Modify Package</button>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="image-wrapper">
+      <img src="destinationimages/meenakshi.webp" alt="Meenakshi Temple">
+      <div class="image-details">
+        <h3>Meenakshi Temple, Madurai</h3>
+        <p class="package-price"><span class="detail-label">Price:</span> ₹2,500</p>
+        <p class="package-duration"><span class="detail-label">Duration:</span> 3 days, 2 nights</p>
+        <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> Winter (October to February)</p>
+        <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+        <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast included</p>
+        <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train tickets and hotel stay</p>
+        <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free entry to the temple</p>
+        <div class="button">
+          <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+          <button class="modify-button" onclick="showModifyPackageForm('Meenakshi Temple, Madurai')">Modify Package</button>
+        </div>
+      </div>
+    </div>
+   
+  <div class="image-wrapper">
+    <img src="destinationimages/andman.jpg" alt="Andaman Islands">
+    <div class="image-details">
+      <h3>Andaman Islands</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹6,000</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 6 days, 5 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> November to April</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and Dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Return flights, local transportation, and accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free snorkeling activity</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Andaman Islands')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="image-wrapper">
+    <img src="destinationimages/goa.jpg" alt="Goa">
+    <div class="image-details">
+      <h3>Goa</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹4,000</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 4 days, 3 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> November to March</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 2</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Flight, local transfers, and accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free water sports activity</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Goa')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="image-wrapper">
+    <img src="destinationimages/taj.jpeg" alt="Agra">
+    <div class="image-details">
+      <h3>Agra (Taj Mahal)</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹1,500</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 2 days, 1 night</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> October to March</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 2</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train tickets and accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free guide service for Taj Mahal</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Agra (Taj Mahal)')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="image-wrapper">
+    <img src="destinationimages/rishikesh.jpg" alt="Rishikesh">
+    <div class="image-details">
+      <h3>Rishikesh</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹2,500</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 3 days, 2 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> September to March</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and Dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train travel and accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free rafting experience</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Rishikesh')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="image-wrapper">
+    <img src="destinationimages/ladakh.jpg" alt="Leh Ladakh">
+    <div class="image-details">
+      <h3>Leh Ladakh</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹6,000</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 7 days, 6 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> June to September</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 2</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and Dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Flight, local transfers, and accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free bike rental for local sightseeing</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Leh Ladakh')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="image-wrapper">
+    <img src="destinationimages/kashi.jpg" alt="Varanasi">
+    <div class="image-details">
+      <h3>Varanasi</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹3,000</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 3 days, 2 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> October to March</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 2</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train travel and accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free boat ride on the Ganges</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Varanasi')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+  <div class="image-wrapper">
+    <img src="destinationimages/kerala.jpg" alt="Kerala Backwaters">
+    <div class="image-details">
+      <h3>Kerala (Backwaters)</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹4,000</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 5 days, 4 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> October to March</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 2</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast, lunch, and dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Houseboat cruise, accommodation, and local transportation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Complimentary Ayurveda spa treatment</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Kerala (Backwaters)')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="image-wrapper">
+    <img src="destinationimages/udaipur.jpeg" alt="Jaipur">
+    <div class="image-details">
+      <h3>Jaipur (Pink City)</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹3,500</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 3 days, 2 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> October to March</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 2</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Flight and hotel accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free guided tour to Amber Fort</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Jaipur (Pink City)')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="image-wrapper">
+    <img src="destinationimages/shimla.webp" alt="Shimla">
+    <div class="image-details">
+      <h3>Shimla</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹3,000</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 4 days, 3 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> March to June</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and Dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train or bus travel, accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free toy train ride</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Shimla')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="image-wrapper">
+    <img src="destinationimages/nainital.jpg" alt="Nainital">
+    <div class="image-details">
+      <h3>Nainital</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹2,500</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 3 days, 2 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> March to June, September to December</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 2</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Bus ride, hotel accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free boat ride on Naini Lake</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Nainital')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="image-wrapper">
+    <img src="destinationimages/darjeeling.jpg" alt="Darjeeling">
+    <div class="image-details">
+      <h3>Darjeeling</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹3,500</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 4 days, 3 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> March to May, September to December</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 2</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and Dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Train tickets, hotel accommodation</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free visit to Tiger Hill</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Darjeeling')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+  <div class="image-wrapper">
+    <img src="destinationimages/udaipur.avif" alt="Udaipur">
+    <div class="image-details">
+      <h3>Udaipur, Rajasthan</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹4,500</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 3 days, 2 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> October to March</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and Dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Accommodation, local transport</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free boat ride at Lake Pichola</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Udaipur')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="image-wrapper">
+    <img src="destinationimages/spiti.webp" alt="Spiti Valley">
+    <div class="image-details">
+      <h3>Spiti Valley, Himachal Pradesh</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹3,500</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 5 days, 4 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> May to October</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and Dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Accommodation, local transport</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free camping experience</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Spiti Valley')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+  <div class="image-wrapper">
+    <img src="destinationimages/katch.jpg" alt="Kolkata">
+    <div class="image-details">
+      <h3>Kolkata, West Bengal</h3>
+      <p class="package-price"><span class="detail-label">Price:</span> ₹5,500</p>
+      <p class="package-duration"><span class="detail-label">Duration:</span> 4 days, 3 nights</p>
+      <p class="package-best-time"><span class="detail-label">Best Time to Visit:</span> October to March</p>
+      <p class="package-num-people"><span class="detail-label">Number of People:</span> 4</p>
+      <p class="package-food-inclusions"><span class="detail-label">Food Inclusions:</span> Breakfast and Dinner</p>
+      <p class="package-travel-inclusions"><span class="detail-label">Travel Inclusions:</span> Accommodation, local transport</p>
+      <p class="package-free-offers"><span class="detail-label">Free Offer:</span> Free heritage walk</p>
+      <div class="button">
+        <button class="confirm-button" onclick="summarizeChanges()">Confirm Package</button>
+        <button class="modify-button" onclick="showModifyPackageForm('Kolkata')">Modify Package</button>
+      </div>
+    </div>
+  </div>
+  
+ 
+  </div>
+  </section>
+  <div class="modal" id="modifyModal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModifyModal()">&times;</span>
+      <div class="modal-header">Customize Your Package</div>
+      <div class="form-container">
+        <h3>Fill Your Details</h3>
+        <form id="modifyForm">
+          <div class="form-group">
+            <label for="numOfDays">Number of Days:</label>
+            <input type="number" id="numOfDays" name="numOfDays" required min="1" oninput="updateTotalCost()">
+          </div>
+
+          <div class="form-group">
+            <label for="travelOption">Travel Option:</label>
+            <select id="travelOption" name="travelOption" oninput="updateTotalCost()">
+              <option value="flight">Flight - ₹500</option>
+              <option value="train">Train - ₹150</option>
+              <option value="bus">Bus - ₹50</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="foodOption">Food Option:</label>
+            <select id="foodOption" name="foodOption" oninput="updateTotalCost()">
+              <option value="veg">Vegetarian - ₹100 per person</option>
+              <option value="nonveg">Non-Vegetarian - ₹300 per person</option>
+              <option value="vegan">Vegan - ₹150 per person</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="numOfRooms">Number of Rooms:</label>
+            <input type="number" id="numOfRooms" name="numOfRooms" required min="1" oninput="updateTotalCost()">
+          </div>
+
+          <div class="form-group">
+            <label for="numOfPeople">Number of People:</label>
+            <input type="number" id="numOfPeople" name="numOfPeople" required min="1" oninput="updateTotalCost()">
+          </div>
+
+          <div class="total-cost" id="totalCost">Total Cost: ₹0</div>
+
+          <button type="button" class="btn" onclick="summarizeChanges()">Confirm Changes</button>
+          <button type="button" class="btn cancel" onclick="closeModifyModal()">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="celebration-message" id="celebrationMessage" >🎉 Your Package has been Confirmed! 🎉 <br>
+    The tickets and journey details has been already mail to your registered email.Kindly response ASAP.
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script src="js/package.js"></script>
+</body>
+</html>

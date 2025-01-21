@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Account</title>
+  <link rel="icon" type="image/x-icon" href="logo1.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="container right-panel-active">
+    <div class="container__form container--signup">
+      <form action="#" class="form" id="form1">
+        <h2 class="form__title">Sign Up</h2>
+        <input type="text" placeholder="User" class="input" id="signupName"/>
+        <input type="email" placeholder="Email" class="input" id="signupEmail"/>
+        <input type="password" placeholder="Password" class="input" id="signupPassword"/>
+        <button class="btn">Sign Up</button>
+      </form>
+    </div>
+    <div class="container__form container--signin">
+      <form action="#" class="form" id="form2">
+        <h2 class="form__title">Sign In</h2>
+        <input type="email" placeholder="Email" class="input" id="signinEmail"/>
+        <input type="password" placeholder="Password" class="input" id="signinPassword"/>
+        <a href="#" class="link">Forgot your password?</a>
+          <button class="btn"> <a href="home2.html" class="signin" style="text-decoration: none; color:ivory">Sign In</a></button>
+      </form>
+    </div>
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>

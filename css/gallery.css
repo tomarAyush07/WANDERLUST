@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+
+.html {
+  font-size: 62.5%;
+  background-color: black;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+.navbar {
+  box-shadow: 0px 5px 10px 0px;
+  position: fixed;
+  width: 100%;
+  background: black;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+.navbar__auth {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+.menu-items {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: ivory;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+.logoimage{
+  position: absolute; 
+  top: 5px; 
+  right: 15px; 
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0; 
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: ivory;
+  }
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: black;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px ;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 2rem;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+}
+:root {
+  --gutter: 200px;
+}
+.scene {
+  background-color: rgba(28,28,28,0.3);
+  height: 100vh;
+  perspective: 800px;
+  width: calc(340px * 5 + 250px);
+  min-width: 100%;
+  min-height: 550px;
+  max-height: 1080px;
+}
+.box {
+  min-width: 100%;
+  height: 100%;
+  min-height: 550px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(calc(var(--gutter) * -2));
+}
+.box__face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ivory;
+  font-size: 2em;
+  font-family: Arial;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+.box__face--back {
+  background-image: radial-gradient(
+  circle at 20% 100%,
+  rgba(184, 184, 184, 0.1) 0%,
+  rgba(184, 184, 184, 0.1) 33%,
+  rgba(96, 96, 96, 0.1) 33%,
+  rgba(96, 96, 96, 0.1) 66%,
+  rgba(7, 7, 7, 0.1) 66%,
+  rgba(7, 7, 7, 0.1) 99%
+),
+linear-gradient(40deg, #040a22, #222322, #161817, ivory);
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 10px 0 rgba(28,28,28,0.05) inset, 30px 0px 120px -40px rgba(28,28,28,0.15) inset, -30px 0px 120px -40px rgba(28,28,28,0.15) inset;
+  overflow: auto; 
+}
+.box__face--right,
+.box__face--left {
+  width: calc(var(--gutter) * 2);
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  overflow: hidden;
+}
+.box__face--left {
+  left: calc(var(--gutter) * 2);
+  background: #117964;
+background-image: radial-gradient(
+  circle at 20% 100%,
+  rgba(184, 184, 184, 0.1) 0%,
+  rgba(184, 184, 184, 0.1) 33%,
+  rgba(96, 96, 96, 0.1) 33%,
+  rgba(96, 96, 96, 0.1) 66%,
+  rgba(7, 7, 7, 0.1) 66%,
+  rgba(7, 7, 7, 0.1) 99%
+),
+linear-gradient(40deg, #040a22, #222322, #161817, ivory);
+  transform: rotateY(90deg) translateZ(calc(var(--gutter) * -3)) translateX(calc(var(--gutter) * -1));
+}
+.box__face--right {
+  right: calc(var(--gutter) * 2);
+  background-image: radial-gradient(
+  circle at 20% 100%,
+  rgba(184, 184, 184, 0.1) 0%,
+  rgba(184, 184, 184, 0.1) 33%,
+  rgba(96, 96, 96, 0.1) 33%,
+  rgba(96, 96, 96, 0.1) 66%,
+  rgba(7, 7, 7, 0.1) 66%,
+  rgba(7, 7, 7, 0.1) 99%
+),
+linear-gradient(40deg, #040a22, #222322, #161817, ivory);
+  transform: rotateY(-90deg) translateZ(calc(var(--gutter) * -3)) translateX(var(--gutter));
+}
+.box__face--top,
+.box__face--bottom {
+  width: 100%;
+  height: calc(var(--gutter) * 2);
+}
+.box__face--top {
+  top: var(--gutter);    
+  background-image: radial-gradient(
+  circle at 20% 100%,
+  rgba(184, 184, 184, 0.1) 0%,
+  rgba(184, 184, 184, 0.1) 33%,
+  rgba(96, 96, 96, 0.1) 33%,
+  rgba(96, 96, 96, 0.1) 66%,
+  rgba(7, 7, 7, 0.1) 66%,
+  rgba(7, 7, 7, 0.1) 99%
+),
+linear-gradient(40deg,pink,ivory, ivory,pink);
+  transform: rotateX(-90deg) translateZ(calc(var(--gutter) * -2)) translateY(calc(var(--gutter) * -1)); 
+}
+.box__face--bottom {
+  bottom: var(--gutter);
+  background-image: url('https://img.freepik.com/free-vector/wood-planks-texture-background-parquet-flooring_1048-2145.jpg?size=338&ext=jpg');
+  background-size: contain;
+  transform: rotateX( 90deg) translateZ(calc(var(--gutter) * -2)) translateY(var(--gutter));
+}
+.objects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+.objects__object {
+  flex: 0 0 calc(100% / 7 - 20px); 
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.right-objects__object,.left-objects__object {
+  flex: 0 0 calc(100% / 2 - 20px); 
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.objects__object img,.right-objects__object img,.left-objects__object img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; 
+  object-fit: cover; 
+  object-position: center;
+  border: 8px solid #fff;
+  box-shadow: 0 2px 12px rgba(28, 28, 28, 0.2), 0 8px 6px -6px rgba(28, 28, 28, 0.5);
+}
+
+@media (max-width: 768px) {
+  .box__face--right, .box__face--left {
+    width: calc(var(--gutter) * 1.5);
+  }
+  .objects__object {
+    flex: 1 0 13%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box__face--right, .box__face--left {
+    width: calc(var(--gutter) * 1.5);
+  }
+  .objects__object {
+    flex: 1 0 13%;
+  }
+}

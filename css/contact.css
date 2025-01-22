@@ -198,7 +198,7 @@ transform: rotate(-35deg);
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url(/paralleximage/background.png);
+  background-image: url("../paralleximage/background.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
